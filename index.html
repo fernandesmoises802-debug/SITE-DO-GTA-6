@@ -3,76 +3,215 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GTA 6 - Volta pra Vice City</title>
+<title>GTA 6 | LEONIDA - Site Oficial do Fã | Jason & Lucia</title>
+<meta name="description" content="Tudo sobre GTA 6: trailers, mapa de Leonida, personagens Jason e Lucia, preço, data, gameplay. O maior fã-site do Brasil!">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
-body{background:#0d0217;color:#fff}
-header{padding:20px;display:flex;justify-content:space-between;align-items:center}
-.logo{font-weight:900;font-size:24px;color:#ff2e88}
-.logo span{color:#00f0ff}
-nav a{color:#fff;text-decoration:none;margin:0 10px;font-weight:bold}
-.hero{min-height:90vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:linear-gradient(180deg,#ff2e88,#7b00ff,#0d0217);padding:20px}
-.hero h1{font-size:52px;line-height:1;text-shadow:0 0 20px #ff2e88}
-.hero p{margin:20px 0;font-size:18px;opacity:.9}
-.btn{padding:15px 30px;border-radius:50px;border:none;font-weight:900;cursor:pointer;margin:5px}
-.btn-pink{background:#ff2e88;color:#fff}
-.btn-blue{background:#00f0ff;color:#000}
-.section{padding:50px 20px;max-width:1000px;margin:auto}
-.cards{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:20px}
-.card{background:#1c0b33;padding:25px;border-radius:20px;border:1px solid #ff2e88}
-.card h3{color:#ff2e88;margin-bottom:10px}
-footer{background:#000;text-align:center;padding:25px;opacity:.8}
-.wpp{position:fixed;bottom:20px;right:20px;background:#25D366;padding:15px 20px;border-radius:50px;font-weight:900;text-decoration:none;color:#fff}
-@media(max-width:600px){.cards{grid-template-columns:1fr}.hero h1{font-size:38px}}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0a0f;color:#fff;font-family:'Inter',sans-serif;overflow-x:hidden}
+a{color:#ff2d78;text-decoration:none}
+header{position:fixed;top:0;width:100%;z-index:100;background:rgba(0,0,0,.85);backdrop-filter:blur(10px);display:flex;justify-content:space-between;align-items:center;padding:14px 20px}
+.logo{font-family:'Anton';font-size:28px;letter-spacing:2px}.logo span{color:#ff2d78}.logo em{color:#00e5ff;font-style:normal}
+nav a{margin:0 10px;font-weight:700;font-size:13px;color:#fff}
+.btn{background:linear-gradient(90deg,#ff2d78,#ff9a00);padding:12px 22px;border-radius:30px;color:#fff;font-weight:900;display:inline-block}
+.hero{min-height:100vh;background:linear-gradient(180deg,rgba(0,0,0,.2),#0a0a0f),url('https://images.unsplash.com/photo-1506966953602-c20cc11f75e3?w=1600') center/cover;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:120px 20px 40px}
+.hero h1{font-family:'Anton';font-size:clamp(60px,14vw,150px);line-height:.9;text-shadow:0 10px 40px #ff2d78}
+.hero h1 span{color:#00e5ff}
+.hero p{max-width:700px;font-size:18px;margin:20px 0}
+.badge{background:#ff2d78;padding:8px 16px;border-radius:20px;font-weight:900}
+.stats{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin:20px 0}
+.stat{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);padding:14px 18px;border-radius:16px;text-align:center;min-width:130px}
+.stat b{font-size:24px;color:#00e5ff;display:block}
+section{padding:70px 20px;max-width:1150px;margin:auto}
+h2{font-family:'Anton';font-size:42px;margin-bottom:12px} h2 span{color:#ff2d78}
+.sub{color:#bbb;margin-bottom:30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.card{background:#15151f;border:1px solid #2a2a3a;border-radius:20px;padding:22px}
+.card h3{font-size:20px;margin-bottom:8px} .card p{color:#ccc;font-size:14px;line-height:1.6}
+.price{border:2px solid #ff2d78;background:linear-gradient(180deg,#2a0a1a,#15151f)}
+.video{aspect-ratio:16/9;width:100%;border-radius:16px;border:0}
+.trailer-card{background:#111;padding:16px;border-radius:20px}
+.tag{display:inline-block;background:#00e5ff;color:#000;font-weight:900;font-size:11px;padding:4px 10px;border-radius:20px;margin:6px 0}
+.fact{background:#1a1a26;border-left:4px solid #ff2d78;padding:12px 14px;border-radius:10px;font-size:14px}
+footer{background:#000;text-align:center;padding:40px 20px;color:#888}
+.marquee{background:#ff2d78;padding:12px;white-space:nowrap;overflow:hidden;font-weight:900}
+input,select{width:100%;padding:14px;border-radius:12px;border:0;margin:8px 0}
+.countdown{font-family:'Anton';font-size:36px;color:#00e5ff}
+@media(max-width:600px){nav{display:none} h2{font-size:32px}}
 </style>
 </head>
 <body>
-
-<header>
-<div class="logo">GTA <span>6</span></div>
-<nav><a href="#inicio">Início</a><a href="#personagens">Personagens</a><a href="#mapa">Mapa</a></nav>
-</header>
-
-<section class="hero" id="inicio">
-<p>🌴 VICE CITY ESTÁ DE VOLTA 🌴</p>
-<h1>GTA 6<br>VOLTA PRA<br>VICE CITY</h1>
-<p>Lucia & Jason. Uma cidade. Infinitas histórias.</p>
-<div>
-<button class="btn btn-pink" onclick="alert('Trailer em breve!')">▶ VER TRAILER</button>
-<button class="btn btn-blue">DATA DE LANÇAMENTO</button>
+<header><div class="logo">GTA <span>VI</span> <em>LEONIDA</em></div><nav><a href="#trailers">TRAILERS</a><a href="#mapa">MAPA</a><a href="#personagens">PERSONAGENS</a><a href="#curiosidades">100 FATOS</a><a href="#preco">PREÇO</a></nav><a class="btn" href="#preco">JOGAR AGORA</a></header>
+<div class="marquee">🔥 GTA 6 JÁ LANÇOU • 19 NOV 2026 • PS5 • XBOX SERIES X|S • VICE CITY • LEONIDA • JASON & LUCIA • 99 NO METACRITIC • 🔥</div>
+<section class="hero">
+<div class="badge">⭐ JÁ DISPONÍVEL • 19 DE NOVEMBRO DE 2026</div>
+<h1>GRAND THEFT<br><span>AUTO VI</span></h1>
+<p>Jason e Lucia sempre souberam que o jogo está armado contra eles. Um golpe fácil dá errado e eles caem numa conspiração criminosa que atravessa todo o estado de <b>Leonida</b>. Agora só um tem o outro.</p>
+<div class="stats">
+<div class="stat"><b>19 NOV 2026</b>Lançamento</div>
+<div class="stat"><b>212 GB</b>Tamanho</div>
+<div class="stat"><b>99/100</b>Metacritic</div>
+<div class="stat"><b>2x MAIOR</b>Que GTA 5</div>
+<div class="stat"><b>91</b>Missões</div>
+<div class="stat"><b>170+</b>Animais</div>
 </div>
+<a class="btn" href="#trailers">▶ ASSISTIR TODOS OS TRAILERS</a>
+<p style="margin-top:16px;font-size:13px">PS5 • PS5 Pro • Xbox Series X|S • Legendas em Português • 18 Anos</p>
+<div class="countdown" id="count">LEONIDA TE ESPERA!</div>
 </section>
 
-<section class="section" id="personagens">
-<h2>PERSONAGENS</h2>
-<div class="cards">
-<div class="card"><h3>LUCIA 💜</h3><p>Forte, inteligente e pronta pra dominar Vice City. A protagonista que todo mundo tava esperando.</p></div>
-<div class="card"><h3>JASON 💙</h3><p>Parceiro da Lucia. Juntos eles vão viver o maior corre de suas vidas.</p></div>
+<section id="trailers"><h2>TODOS OS <span>TRAILERS OFICIAIS</span></h2><p class="sub">Todos os vídeos oficiais da Rockstar Games. Nada de fake. Clique e assista!</p>
+<div class="grid">
+<div class="trailer-card"><span class="tag">TRAILER 1 • 04 DEZ 2023</span><h3>Trailer 1 - A Revelação</h3><p>Lucia na prisão, Vice City, Leonida. Música: Tom Petty - Love Is A Long Road. 90 MILHÕES de views em 24h, recorde!</p><iframe class="video" src="https://www.youtube.com/embed/QdBZY2fkU-0" allowfullscreen></iframe></div>
+<div class="trailer-card"><span class="tag">TRAILER 2 • 06 MAI 2025</span><h3>Trailer 2 - Jason & Lucia</h3><p>Apresenta Jason Duval completo, o casal, assaltos e os coadjuvantes. Música: Pointer Sisters - Hot Together. 475M views!</p><iframe class="video" src="https://www.youtube.com/embed/VQRLujxTm3c" allowfullscreen></iframe></div>
+<div class="trailer-card"><span class="tag">27 AGO 2026 • 26 MIN</span><h3>An Extended Look - Gameplay</h3><p>27 minutos de gameplay de verdade capturado no PS5! Missões, assaltos, sistema Heat, troca de personagem. Estreou na Netflix!</p><iframe class="video" src="https://www.youtube.com/embed/tJbzMqJGH4k" allowfullscreen></iframe></div>
+<div class="trailer-card"><span class="tag">15 OUT 2026 • LANÇAMENTO</span><h3>Launch Trailer</h3><p>Trailer final de lançamento! Música: Justice ft. Tame Impala, SZA - Flower in a Hurricane. Puro cinema!</p><iframe class="video" src="https://www.youtube.com/embed/rz1B4B2yBZY" allowfullscreen></iframe></div>
+<div class="trailer-card"><span class="tag">10 NOV 2026</span><h3>Pre-Load Now</h3><p>Vídeo curto de 30 segundos avisando que o pré-download abriu. Música: Tove Lo - Blood In Your Eyes.</p><iframe class="video" src="https://www.youtube.com/embed/_yl5ELcmugI" allowfullscreen></iframe></div>
+<div class="trailer-card"><span class="tag">19 NOV 2026</span><h3>Out Now - Já Disponível!</h3><p>O vídeo do dia do lançamento! GTA 6 finalmente nas lojas do mundo todo.</p><a class="btn" href="https://www.youtube.com/@RockstarGames" target="_blank">VER NO CANAL DA ROCKSTAR</a><p style="margin-top:10px">⚠️ Não existe Trailer 3 oficial! O que chamam de Trailer 3 é o Extended Look ou o Launch Trailer.</p></div>
+</div></section>
+
+<section id="mapa"><h2>MAPA DE <span>LEONIDA</span></h2><p class="sub">O maior mapa que a Rockstar já fez. 6 regiões, 5 condados, 2x maior que GTA 5. Flórida fictícia!</p>
+<div class="grid">
+<div class="card"><h3>🌴 Vice City</h3><p><b>Inspiração:</b> Miami. Neon, praia, Ocean Beach, Little Cuba, Stockyard, Downtown, Aeroporto, Porto, Club 919, 700+ interiores sem loading!</p></div>
+<div class="card"><h3>🏝️ Leonida Keys</h3><p><b>Inspiração:</b> Florida Keys. Ilhas, pontes gigantes, casa do Jason, barcos, pesca, mergulho. Onde o jogo começa!</p></div>
+<div class="card"><h3>🐊 Grassrivers</h3><p><b>Inspiração:</b> Everglades. Pântano, airboat, jacarés, cobras, vida selvagem perigosa.</p></div>
+<div class="card"><h3>🏚️ Port Gellhorn</h3><p><b>Inspiração:</b> Panama City. Cidade de praia falida, motéis baratos, corrida de rua, crime de rua.</p></div>
+<div class="card"><h3>🏭 Ambrosia</h3><p><b>Inspiração:</b> Clewiston. Cidade do açúcar, refinaria Allied Crystal, gangue de motoqueiros Final Chapter MC.</p></div>
+<div class="card"><h3>⛰️ Mount Kalaga</h3><p><b>Inspiração:</b> Norte da Flórida. Parque Nacional, caça, pesca, trilhas off-road, Bigfoot, mistérios.</p></div>
 </div>
+<p style="margin-top:20px"><b>5 Condados:</b> Vice-Dale, Mariana, Kelly, Leonard, Lummox • <b>Distritos:</b> Ocean Beach, Vice Beach, Little Cuba, La Pearl, Key Lento, Southwind, Mile Zero e mais 50!</p>
 </section>
 
-<section class="section" id="mapa">
-<h2>MAPA - VICE CITY</h2>
-<div class="cards">
-<div class="card"><h3>🌅 PRAIAS</h3><p>Praia, neon, festa e muito role.</p></div>
-<div class="card"><h3>🏙️ CENTRO</h3><p>Prédios, lojas e muita ação.</p></div>
-<div class="card"><h3>🐊 PÂNTANO</h3><p>Área nova cheia de mistério.</p></div>
-<div class="card"><h3>🏝️ ILHAS</h3><p>Explore cada canto de Leonida.</p></div>
+<section id="personagens"><h2>PERSONAGENS <span>OFICIAIS</span></h2><p class="sub">2 jogáveis + 6 coadjuvantes confirmados pela Rockstar.</p>
+<div class="grid">
+<div class="card"><h3>🔥 Jason Duval - Jogável</h3><p>Ex-militar, 30 anos, 1,85m. Cresceu entre golpistas, trabalhou para traficantes nos Keys. Mora na casa de Brian. Quer recomeço.</p></div>
+<div class="card"><h3>💎 Lucia Caminos - Jogável</h3><p>Ex-presidiária, 26 anos, 1,60m. Aprendeu a lutar com o pai. Saiu da Penitenciária de Leonida. Quer dar vida boa pra mãe. Arma: Klose K17.</p></div>
+<div class="card"><h3>🧢 Cal Hampton</h3><p>Melhor amigo do Jason, ama teoria da conspiração, mora nos Keys, pesca com Jason.</p></div>
+<div class="card"><h3>🚤 Brian Heder</h3><p>Contrabandista das antigas, mentor do Jason, dono do estaleiro nos Keys.</p></div>
+<div class="card"><h3>👑 Boobie Ike</h3><p>Lenda de Vice City, empresário, dono de boate, virou lenda local.</p></div>
+<div class="card"><h3>🎤 Dre'Quan Priest</h3><p>Artista, quer virar estrela do rap, ligado ao Boobie.</p></div>
+<div class="card"><h3>🎶 Real Dimez - Bae-Luxe & Roxy</h3><p>Dupla de rap feminina, famosas no TikTok de Leonida, músicas virais.</p></div>
+<div class="card"><h3>💰 Raul Bautista</h3><p>Assaltante profissional, especialista em roubo a banco, recruta Jason e Lucia.</p></div>
+</div></section>
+
+<section id="preco"><h2>PREÇO & <span>EDIÇÕES</span></h2><div class="grid">
+<div class="card"><h3>Standard Edition</h3><h2 style="font-size:36px">R$ 449,90</h2><p>✅ Jogo completo<br>✅ 91 missões, 5 capítulos<br>✅ Mapa completo de Leonida<br>✅ Pacote Vintage Vice City (bônus)</p><a class="btn" href="https://www.playstation.com/pt-br/games/grand-theft-auto-vi/" target="_blank">COMPRAR NO PS5</a></div>
+<div class="card price"><h3>🔥 Ultimate Edition</h3><h2 style="font-size:36px">R$ 549,90</h2><p>✅ Tudo da Standard<br>✅ Grotti Cheetah 95, Dinka Enduro, Shitzu Squalo<br>✅ Rideout Customs, One-Eyed Willie's, Sara's Salon, Stock 305, Electric Fang Tattoo<br>✅ Roupas, armas personalizadas, missão Classic Car Collection</p><a class="btn" href="https://www.xbox.com/pt-BR/games/store/grand-theft-auto-vi/9p3j32v9q9hl" target="_blank">COMPRAR NO XBOX</a></div>
+<div class="card"><h3>📦 O que precisa?</h3><p><b>Console:</b> PS5, PS5 Pro, Xbox Series X|S<br><b>Espaço:</b> 212 GB livres<br><b>Internet:</b> Pra baixar<br><b>Idade:</b> 18 anos<br><b>PC:</b> SEM DATA ainda! Cuidado com golpe de GTA 6 pra PC/APK!<br><b>FPS:</b> 30 FPS, PS5 Pro tem PSSR + Ray Tracing</p></div>
+</div></section>
+
+<section id="curiosidades"><h2>100+ FATOS & <span>CURIOSIDADES</span></h2><p class="sub">Pesquisa completa! Tudo que a Rockstar confirmou + o que a imprensa viu jogando.</p>
+<div class="grid">
+<div class="fact">1. Lançou 19/11/2026, 13 anos depois do GTA 5 (2013)</div>
+<div class="fact">2. Primeiro GTA numerado desde 2013</div>
+<div class="fact">3. Desenvolvido pela Rockstar North, Edimburgo</div>
+<div class="fact">4. Motor RAGE, mesmo do GTA 5 e RDR2</div>
+<div class="fact">5. 2 adiamentos: era 2025, depois 26 Mai 2026, depois 19 Nov 2026</div>
+<div class="fact">6. Trailer 1 vazou, Rockstar lançou 1 dia antes</div>
+<div class="fact">7. Lucia é a 1ª protagonista mulher jogável da era moderna</div>
+<div class="fact">8. Casal inspirado em Bonnie & Clyde</div>
+<div class="fact">9. Troca de personagem livre a partir da missão Coffee Break</div>
+<div class="fact">10. Dá pra jogar como casal ou sozinho</div>
+<div class="fact">11. Polícia agora tem 6 estrelas, não 5</div>
+<div class="fact">12. Polícia lembra tua roupa, carro, rosto, arma e cúmplice</div>
+<div class="fact">13. Tem sistema de CCTV - câmeras te reconhecem</div>
+<div class="fact">14. Criminal Profile: te julga se tu é profissional ou violento</div>
+<div class="fact">15. Relacionamento Jason/Lucia muda o final</div>
+<div class="fact">16. Mais de 600 mil animações</div>
+<div class="fact">17. Mais de 170 espécies de animais</div>
+<div class="fact">18. Tem jacaré, pantera, tubarão, tartaruga, golfinho</div>
+<div class="fact">19. Tem sistema de academia, comida e sono</div>
+<div class="fact">20. Se beber muito, fica ressaca visível por dias</div>
+<div class="fact">21. Personagem engorda/emagrece conforme tu joga</div>
+<div class="fact">22. Dinheiro tem que guardar no banco / ATM</div>
+<div class="fact">23. Se morrer, pode perder dinheiro que tá no bolso</div>
+<div class="fact">24. Roubar carro usa app WaINK e clonador de chave</div>
+<div class="fact">25. Carros tem gasolina, precisa abastecer</div>
+<div class="fact">26. Armas ficam no porta-malas do carro</div>
+<div class="fact">27. Tem modo Foco no combate</div>
+<div class="fact">28. Tem rádio + podcasts no carro e no fone</div>
+<div class="fact">29. Trilha: GTA VI: The Album - 34 músicas - Travis Scott, etc</div>
+<div class="fact">30. Trilha do Justice - 30 faixas - Flower in a Hurricane</div>
+<div class="fact">31. Sem modo Online no lançamento</div>
+<div class="fact">32. Online pode vir em 2027 (rumor)</div>
+<div class="fact">33. Sem versão PC anunciada</div>
+<div class="fact">34. Sem PS4, Xbox One (só nuvem no Xbox One)</div>
+<div class="fact">35. Caixa física NÃO tem disco, só código</div>
+<div class="fact">36. Código de PS5 é travado por região</div>
+<div class="fact">37. Pré-venda: 9,6 milhões de cópias estimadas</div>
+<div class="fact">38. Vendeu 32,5 milhões só na pré-venda (Take-Two)</div>
+<div class="fact">39. Faturou US$ 3,79 bilhões no dia 1</div>
+<div class="fact">40. IGN deu 10/10 depois de 120h jogando</div>
+<div class="fact">41. Tem 281 screenshots oficiais</div>
+<div class="fact">42. Tem 138 screenshots na página de mídia</div>
+<div class="fact">43. Mapa oficial grátis pra imprimir no site da Rockstar</div>
+<div class="fact">44. Tem easter egg de Velozes e Furiosos - Eclipse do Paul Walker</div>
+<div class="fact">45. Tem mistério do Bigfoot em Pelican Valley</div>
+<div class="fact">46. Tem 10 pontos de meditação</div>
+<div class="fact">47. Tem 11 corridas em Gellhorn Raceway</div>
+<div class="fact">48. Tem 8 garagens à venda</div>
+<div class="fact">49. Tem loja Electric Fang Tattoo com 50+ tatuagens do FAILE</div>
+<div class="fact">50. Tem 3 joalherias pra assaltar em Vice City</div>
+<div class="fact">51. História ~80 horas só principal</div>
+<div class="fact">52. Tem sistema de Heat - calor policial por região</div>
+<div class="fact">53. Dá pra roubar avião no aeroporto de Vice City</div>
+<div class="fact">54. Tem jet ski, barco, avião, hidroavião, airboat</div>
+<div class="fact">55. Tem fast-travel por app de corrida</div>
+<div class="fact">56. Tem clube 919, boate interativa</div>
+<div class="fact">57. Tem Tisha-Wocka flea market</div>
+<div class="fact">58. Tem passeio de helicóptero, paraquedas</div>
+<div class="fact">59. Tem caça, pesca, mergulho</div>
+<div class="fact">60. Tem corrida de rua, off-road, demolição</div>
+<div class="fact">61. Lucia tem carteira de Liberty City</div>
+<div class="fact">62. Jason tem carteira de Key Lento, 1,90m no documento</div>
+<div class="fact">63. Mãe da Lucia, Mia, mora em Vice City</div>
+<div class="fact">64. Cobra Dolores aparece na história</div>
+<div class="fact">65. Tem personagens secundários diferentes por capítulo</div>
+<div class="fact">66. Tem missões de colecionar carros clássicos</div>
+<div class="fact">67. Tem missões do Wyman, Randy, Yasmani, Moses, Dunk</div>
+<div class="fact">68. Tem app de relacionamento / confiança</div>
+<div class="fact">69. Tem 2 golpes grandes na história</div>
+<div class="fact">70. Tem gangue PTT Youngin$</div>
+<div class="fact">71. Tem gangue Final Chapter MC</div>
+<div class="fact">72. Tem Kolts, donos de boliche</div>
+<div class="fact">73. Tem Mandy, amiga do início</div>
+<div class="fact">74. Tem loja Stock 305, Sara's Salon, Rideout Customs</div>
+<div class="fact">75. Tem Vapid Stanier 1995 no pacote Vintage</div>
+<div class="fact">76. Tem roupa de Tommy Vercetti como referência</div>
+<div class="fact">77. Vice City original era 2002, anos 80</div>
+<div class="fact">78. Agora Vice City é nos dias de hoje</div>
+<div class="fact">79. Leonida = Flórida fictícia</div>
+<div class="fact">80. Vice City = Miami fictícia</div>
+<div class="fact">81. Grassrivers = Everglades</div>
+<div class="fact">82. Keys = Florida Keys</div>
+<div class="fact">83. Port Gellhorn = Panama City Beach</div>
+<div class="fact">84. Ambrosia = Clewiston / Lago Okeechobee</div>
+<div class="fact">85. Mount Kalaga = Norte da Flórida / Georgia</div>
+<div class="fact">86. Tem Lake Leonida, Waning Sands, Belville</div>
+<div class="fact">87. Tem Mile Zero Air Station - base militar</div>
+<div class="fact">88. Se entrar lá, ganha 6 estrelas na hora</div>
+<div class="fact">89. Tem Marshland Animal Park</div>
+<div class="fact">90. Tem R&D Tower com Sniper SM69</div>
+<div class="fact">91. Tem Vespucci Island</div>
+<div class="fact">92. Tem Starfish Island, Peacock Bay</div>
+<div class="fact">93. Tem Bayside Apartments - Apt 201</div>
+<div class="fact">94. Tem Starlet Motel esconderijo</div>
+<div class="fact">95. Tem Los Bollos, South Leonida Estate</div>
+<div class="fact">96. Tem festival GTA VI: The Festival em Miami - Cardi B</div>
+<div class="fact">97. Tem álbum com Tame Impala, SZA, King Gizzard</div>
+<div class="fact">98. Primeiro update corrigiu save, crash e ligações</div>
+<div class="fact">99. GTA 6 fez venda de PS5/Xbox dobrar nos EUA</div>
+<div class="fact">100. Vendeu 200 mil cópias físicas no Japão em 4 dias</div>
+<div class="fact">101. BÔNUS: Siga @fernandesmoises802-debug no Instagram pra mais!</div>
 </div>
+<p style="margin-top:20px;text-align:center"><a class="btn" href="https://www.rockstargames.com/VI" target="_blank">SITE OFICIAL DA ROCKSTAR</a></p>
 </section>
 
-<section class="section">
-<h2>NOVIDADES</h2>
-<p>✅ Trailer oficial<br>✅ Gameplay vazado<br>✅ Novos carros e missões<br>✅ Mundo mais vivo que nunca</p>
-<br>
-<button class="btn btn-pink">QUERO SER AVISADO DO LANÇAMENTO</button>
-</section>
+<section><h2>QUAL PERSONAGEM <span>TU É?</span></h2><p class="sub">Faz o teste rápido e comenta no Instagram!</p><div class="card"><label>Tu prefere:</label><select id="quiz"><option>Assalto planejado e quieto</option><option>Sair atirando e fugindo da polícia</option><option>Ficar de boa nos Keys pescando</option><option>Dominar Vice City e ficar rico</option></select><button class="btn" onclick="document.getElementById('res').innerText='Tu é JASON + LUCIA juntos! O casal perfeito do crime em Leonida! 🔥 Marca teu duo nos comentários!'">VER RESULTADO</button><p id="res" style="margin-top:12px;font-weight:800"></p></div></section>
 
-<footer>
-<p>Site de fã feito por @moises.sites<br>Site profissional por R$150 - Chama no zap (11) 98678-9954</p>
-</footer>
+<section><h2>ME SEGUE <span>NO INSTA</span></h2><p class="sub">Postei esse site lá! Me marca que eu reposto!</p><div class="grid"><div class="card"><h3>📸 Instagram</h3><p>@fernandesmoises802-debug<br>Conteúdo diário de GTA 6, memes, gameplay e novidades!</p><a class="btn" href="https://instagram.com/mo661190" target="_blank">SEGUIR NO INSTA</a></div><div class="card"><h3>🎮 Quer jogar junto?</h3><p>Comenta: #LEONIDA + teu console (PS5 ou Xbox) que eu te adiciono!</p></div><div class="card"><h3>🔔 Ativa o sininho</h3><p>Salva esse site nos favoritos e volta sempre que sair novidade de GTA 6 Online e PC!</p></div></div></section>
 
-<a class="wpp" href="https://wa.me/5511986789954">WhatsApp</a>
-
+<footer><h2 style="color:#fff">GTA VI - LEONIDA</h2><p>Site de fã feito por fã. Não é oficial da Rockstar Games / Take-Two.<br>Todos os direitos de GTA são da Rockstar Games.<br>Feito com ❤️ em São Paulo, Brasil - 2026</p><p style="margin-top:12px">#GTA6 #LEONIDA #VICECITY #JASONELUCIA</p></footer>
+<script>document.getElementById('count').innerText='JÁ LANÇOU! CORRE PRA LEONIDA! 🔥';</script>
 </body>
-</html>
+  </html>
