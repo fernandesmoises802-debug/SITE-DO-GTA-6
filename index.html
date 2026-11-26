@@ -2,156 +2,165 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GTA VI 🌴 VICE CITY - Leonida Sunset | Jason & Lucia</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>GTA VI 🌴 VICE CITY - Leonida Sunset Interativo</title>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Pacifico&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-:root{--laranja:#ff8a00;--laranja-fofo:#ffb26b;--rosa:#ff5e8a;--rosa-neon:#ff2d78;--turq:#00e5ff;--roxo:#7b2ff7;--creme:#fff3e6}
-body{background:#1a0a1e;color:#fff;font-family:'Inter',sans-serif;overflow-x:hidden}
-a{text-decoration:none;color:#fff}
-header{position:fixed;top:0;width:100%;z-index:100;background:linear-gradient(90deg,#ff2d78,#ff8a00,#ffb26b);padding:12px 16px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 5px 30px rgba(255,45,120,.6)}
-.logo{font-family:'Anton';font-size:24px;letter-spacing:1px;text-shadow:2px 2px 0 #7b2ff7}.logo span{color:#00e5ff}
-.btn-sunset{background:#fff;color:#ff2d78;padding:10px 18px;border-radius:30px;font-weight:900;font-size:13px;box-shadow:0 4px 15px rgba(0,0,0,.3)}
-.hero{min-height:100vh;padding:110px 18px 30px;text-align:center;background:linear-gradient(180deg,#ff2d78 0%,#ff8a00 28%,#ffb26b 48%,#ffd6a5 62%,#00e5ff 78%,#0a0a1a 100%);position:relative}
-.hero:before{content:"🌴🌴🌴🌴🌴";position:absolute;bottom:120px;left:0;right:0;font-size:80px;opacity:.35;letter-spacing:20px}
-.sun{width:180px;height:180px;background:radial-gradient(circle,#fff3a6,#ff8a00,#ff2d78);border-radius:50%;margin:0 auto 10px;box-shadow:0 0 80px #ff8a00;border:6px solid #fff3e6}
-.script{font-family:'Pacifico';font-size:34px;color:#fff;text-shadow:2px 2px 0 #ff2d78;transform:rotate(-3deg)}
-.hero h1{font-family:'Anton';font-size:clamp(58px,15vw,140px);line-height:.85;text-shadow:4px 4px 0 #7b2ff7,8px 8px 0 rgba(0,0,0,.3)}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{background:#150818;color:#fff;font-family:'Inter',sans-serif;overflow-x:hidden;padding-bottom:90px}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+button{cursor:pointer;border:0;font-family:inherit}
+header{position:fixed;top:0;left:0;right:0;z-index:100;background:linear-gradient(90deg,#ff2d78,#ff8a00);padding:12px 14px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 4px 20px rgba(0,0,0,.4)}
+.logo{font-family:'Anton';font-size:22px;letter-spacing:1px;text-shadow:2px 2px 0 #7b2ff7;white-space:nowrap}
+.topbtn{background:#fff;color:#ff2d78!important;padding:10px 14px;border-radius:30px;font-weight:900;font-size:12px;box-shadow:0 3px 10px rgba(0,0,0,.3);border:2px solid #fff}
+.hero{padding:95px 16px 30px;text-align:center;background:linear-gradient(180deg,#ff2d78 0%,#ff8a00 30%,#ffb26b 50%,#ffd6a5 65%,#7ee8ff 85%,#150818 100%)}
+.sun{width:140px;height:140px;margin:0 auto 8px;background:radial-gradient(circle,#fff7a6,#ff8a00,#ff2d78);border-radius:50%;border:5px solid #fff3e6;box-shadow:0 0 60px #ff8a00}
+.script{font-family:'Pacifico';font-size:30px;text-shadow:2px 2px 0 #ff2d78;line-height:1.2}
+.pill{display:inline-block;background:#fff;color:#ff2d78;padding:8px 14px;border-radius:30px;font-weight:900;font-size:12px;margin:10px 0}
+.hero h1{font-family:'Anton';font-size:clamp(52px,16vw,120px);line-height:.9;text-shadow:4px 4px 0 #7b2ff7}
 .hero h1 i{color:#00e5ff;font-style:normal}
-.hero p{max-width:680px;margin:16px auto;background:rgba(0,0,0,.45);padding:14px;border-radius:18px;backdrop-filter:blur(6px);line-height:1.5}
-.pill{display:inline-block;background:#fff;color:#ff2d78;padding:8px 16px;border-radius:30px;font-weight:900;font-size:12px}
-.stats{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:18px 0}
-.stat{background:rgba(255,255,255,.95);color:#222;padding:12px 14px;border-radius:18px;min-width:118px;border:3px solid #ff8a00}.stat b{font-size:22px;color:#ff2d78;display:block}.stat small{color:#666}
-.btn-big{display:inline-block;background:linear-gradient(90deg,#ff2d78,#ff8a00);padding:14px 26px;border-radius:30px;font-weight:900;box-shadow:0 8px 25px rgba(255,45,120,.6);border:2px solid #fff}
-section{padding:60px 16px;max-width:1150px;margin:auto}
-.pink-sec{background:linear-gradient(180deg,#2a0a2e,#1a0a1e)}
-.orange-sec{background:linear-gradient(180deg,#ff8a00,#ff2d78);border-radius:30px;margin:20px}
-h2{font-family:'Anton';font-size:40px;line-height:1}h2 span{color:#ffb26b}.turq{color:#00e5ff!important}
-.sub{color:#ffd6a5;margin:10px 0 26px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
-.card{background:#fff;color:#222;border-radius:24px;padding:20px;border:4px solid #ffb26b;box-shadow:0 10px 25px rgba(0,0,0,.25);position:relative;overflow:hidden}
-.card:before{content:"🌴";position:absolute;right:8px;top:6px;font-size:28px;opacity:.5}
-.card h3{font-size:19px;color:#ff2d78}.card p{font-size:14px;line-height:1.6;color:#444;margin-top:6px}
-.card-rosa{background:linear-gradient(180deg,#fff3e6,#ffd6a5)}
-.card-azul{background:linear-gradient(180deg,#e0fbff,#a5f3ff)}
-.tag{background:#ff2d78;color:#fff;font-size:11px;font-weight:900;padding:5px 10px;border-radius:20px}
+.hero-box{background:rgba(0,0,0,.55);padding:14px;border-radius:18px;max-width:680px;margin:14px auto;line-height:1.5;font-size:15px}
+.stats{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:14px 0}
+.stat{flex:1 1 30%;min-width:100px;max-width:160px;background:#fff;color:#222;padding:10px 6px;border-radius:16px;border:3px solid #ff8a00;text-align:center}
+.stat b{font-size:20px;color:#ff2d78;display:block}
+.btn-big{display:inline-block;background:linear-gradient(90deg,#ff2d78,#ff8a00);padding:14px 24px;border-radius:30px;font-weight:900;color:#fff;border:2px solid #fff;box-shadow:0 8px 20px rgba(255,45,120,.5);margin:8px 0}
+section{padding:50px 14px;max-width:1150px;margin:auto}
+h2{font-family:'Anton';font-size:34px;line-height:1}h2 span{color:#ffb26b}
+.sub{color:#ffd6a5;margin:10px 0 20px}
+.grid{display:grid;grid-template-columns:1fr;gap:14px}
+@media(min-width:700px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.grid{grid-template-columns:repeat(3,1fr)}}
+.card{background:#fff;color:#222;border-radius:22px;padding:18px;border:3px solid #ffb26b;box-shadow:0 8px 20px rgba(0,0,0,.25)}
+.card h3{font-size:18px;color:#ff2d78}.card p{font-size:14px;line-height:1.6;color:#444;margin-top:6px}
+.tag{display:inline-block;background:#ff2d78;color:#fff;font-size:11px;font-weight:900;padding:5px 10px;border-radius:20px}
 .tag2{background:#00e5ff;color:#000}
-.video{width:100%;aspect-ratio:16/9;border-radius:16px;border:4px solid #ff8a00;background:#000}
-.fact{background:#fff;color:#222;padding:12px;border-radius:16px;font-size:13.5px;border-left:8px solid #ff8a00}
-.price-card{background:linear-gradient(180deg,#ff2d78,#ff8a00)!important;color:#fff!important;border-color:#fff!important}.price-card h3,.price-card p{color:#fff!important}
-.marquee{background:#00e5ff;color:#000;font-weight:900;padding:10px;white-space:nowrap;overflow:hidden}
-.palm{font-size:44px;line-height:1;text-align:center;letter-spacing:10px}
-footer{background:#0a0a0a;text-align:center;padding:40px 16px;color:#ffb26b}
-select,button{width:100%;padding:14px;border-radius:14px;border:0;margin:8px 0;font-weight:700}
-button{background:#ff2d78;color:#fff}
-@media(max-width:600px){h2{font-size:32px}.sun{width:130px;height:130px}}
+.thumb{position:relative;border-radius:16px;overflow:hidden;margin-top:10px;border:3px solid #ff8a00;background:#000;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center}
+.thumb img{width:100%;height:100%;object-fit:cover}
+.play{position:absolute;width:64px;height:64px;background:#ff0000;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;color:#fff;box-shadow:0 0 20px rgba(0,0,0,.6)}
+.fact{background:#fff;color:#222;padding:12px;border-radius:14px;font-size:13.5px;border-left:8px solid #ff8a00}
+.price-card{background:linear-gradient(180deg,#ff2d78,#ff8a00)!important;color:#fff!important}.price-card h3,.price-card p{color:#fff!important}
+.marquee{background:#00e5ff;color:#000;font-weight:900;padding:10px;white-space:nowrap;overflow:hidden;font-size:13px}
+.palm{font-size:36px;text-align:center}
+footer{background:#000;text-align:center;padding:30px 14px 50px;color:#ffb26b}
+select{width:100%;padding:14px;border-radius:14px;border:2px solid #ffb26b;margin:8px 0;font-weight:700}
+.btn{width:100%;padding:14px;border-radius:14px;background:#ff2d78;color:#fff;font-weight:900;margin:6px 0}
+.btn-blue{background:#00b7d6;color:#000}
+.filter-bar{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}
+.filter-bar button{padding:10px 14px;border-radius:30px;background:#fff;color:#222;font-weight:900;border:2px solid #ff8a00}
+.filter-bar button.active{background:#ff2d78;color:#fff}
+.game{font-size:44px;text-align:center;letter-spacing:6px}
+.like-btn{background:#fff;color:#ff2d78;border:2px solid #ff2d78;padding:10px;border-radius:30px;font-weight:900;width:100%;margin-top:10px}
+.bottom-nav{position:fixed;bottom:0;left:0;right:0;background:#000;display:flex;justify-content:space-around;padding:12px 6px 18px;z-index:100;border-top:2px solid #ff2d78}
+.bottom-nav a{font-size:12px;font-weight:900;text-align:center;color:#fff}
+.quiz-opt{display:block;width:100%;text-align:left;background:#fff3e6;border:2px solid #ffb26b;padding:12px;border-radius:14px;margin:6px 0;font-weight:700;color:#222}
+.quiz-opt:active{background:#ff8a00;color:#fff}
 </style>
 </head>
 <body>
-<header><div class="logo">GTA <span>VI</span> 🌴 LEONIDA</div><a class="btn-sunset" href="#preco">🧡 JOGAR AGORA</a></header>
+<header><div class="logo">GTA VI 🌴 LEONIDA</div><a class="topbtn" href="#preco">🧡 JOGAR AGORA</a></header>
+<div style="height:48px"></div>
 <div class="marquee">🌴 VICE CITY • PÔR-DO-SOL • OCEAN DRIVE • JASON & LUCIA • LEONIDA • 19 NOV 2026 • JÁ LANÇOU! 🌴</div>
 
-<section class="hero">
+<section class="hero" style="max-width:100%">
 <div class="sun"></div>
 <div class="script">Bem-vindo a Vice City...</div>
 <div class="pill">⭐ JÁ DISPONÍVEL • 19 DE NOVEMBRO DE 2026</div>
 <h1>GRAND THEFT<br><i>AUTO VI</i></h1>
-<p>🌅 Jason e Lucia sempre souberam que o jogo está armado contra eles. Um golpe fácil dá errado e eles caem numa conspiração que atravessa todo o estado de <b>Leonida</b>. Agora só um tem o outro. <br><b>🧡 Laranja pôr-do-sol, rosa neon, mar turquesa e palmeiras - essa é Vice City!</b></p>
+<div class="hero-box">🌅 Jason e Lucia sempre souberam que o jogo está armado contra eles. Um golpe fácil dá errado e eles caem numa conspiração que atravessa todo o estado de <b>Leonida</b>. Agora só um tem o outro.<br><b>🧡 Laranja pôr-do-sol, rosa neon, mar turquesa e palmeiras - essa é Vice City!</b></div>
 <div class="stats">
-<div class="stat"><b>19 NOV 2026</b><small>Lançamento</small></div>
-<div class="stat"><b>212 GB</b><small>Tamanho</small></div>
-<div class="stat"><b>99/100</b><small>Metacritic</small></div>
-<div class="stat"><b>2x MAIOR</b><small>Que GTA 5</small></div>
-<div class="stat"><b>91</b><small>Missões</small></div>
-<div class="stat"><b>170+</b><small>Animais</small></div>
+<div class="stat"><b>19 NOV 2026</b>Lançamento</div>
+<div class="stat"><b>212 GB</b>Tamanho</div>
+<div class="stat"><b>99/100</b>Metacritic</div>
+<div class="stat"><b>2x MAIOR</b>Que GTA 5</div>
+<div class="stat"><b>91</b>Missões</div>
+<div class="stat"><b>170+</b>Animais</div>
 </div>
-<a class="btn-big" href="#trailers">▶ ASSISTIR TODOS OS TRAILERS 🌴</a>
-<p style="background:transparent;font-size:12px">PS5 • PS5 Pro • Xbox Series X|S • Legendas em Português • 18 Anos</p>
-<div class="palm">🌴🌴🌴🌴🌴🌴</div>
-<h2 style="color:#fff;text-shadow:3px 3px 0 #ff2d78">JÁ LANÇOU! CORRE PRA LEONIDA! 🔥🧡</h2>
+<a class="btn-big" href="#trailers">▶ ASSISTIR TODOS OS TRAILERS 🌴</a><br>
+<span style="font-size:12px">PS5 • PS5 Pro • Xbox Series X|S • Legendas em Português • 18 Anos</span>
+<div class="palm" style="margin-top:14px">🌴🌴🌴🌴🌴</div>
+<h2 style="color:#fff;text-shadow:3px 3px 0 #ff2d78;margin-top:10px">JÁ LANÇOU!<br>CORRE PRA LEONIDA! 🔥🧡</h2>
+<p style="margin-top:10px;font-weight:900">👇 Desce pra jogar, votar e ver tudo!</p>
 </section>
 
-<section class="pink-sec" id="trailers"><div class="palm">🌴🌅🌴</div><h2>TODOS OS <span>TRAILERS</span> <span class="turq">OFICIAIS</span></h2><p class="sub">Todos os vídeos da Rockstar. Sem fake! Clica e assiste na praia de Vice City!</p>
+<!-- INTERATIVO 1: JOGO DE PROCURADO -->
+<section><h2>⭐ JOGO: <span>FUJA DA POLÍCIA!</span></h2><p class="sub">Aperta o botão e aumenta teu nível de procurado! Consegue chegar em 6 estrelas?</p>
+<div class="card" style="text-align:center"><div class="game" id="stars">⭐</div><p id="wantedText" style="font-weight:900;color:#ff2d78">Nível 1 - A polícia tá te olhando...</p><button class="btn" onclick="fugir()">🚔 FAZER BAGUNÇA +1 ESTRELA</button><button class="btn btn-blue" onclick="limpar()">🧼 SE ESCONDER - ZERAR</button><p id="wantedScore">Pontos de crime: 0</p></div></section>
+
+<!-- INTERATIVO 2: FILTRO MAPA -->
+<section id="mapa"><h2>MAPA DE <span>LEONIDA</span> 🌴</h2><p class="sub">Aperta nos botões pra filtrar! Interativo de verdade!</p>
+<div class="filter-bar"><button class="active" onclick="filtrar('todos',this)">TODOS</button><button onclick="filtrar('cidade',this)">🏙️ CIDADE</button><button onclick="filtrar('natureza',this)">🌴 NATUREZA</button><button onclick="filtrar('praia',this)">🏖️ PRAIA</button></div>
+<div class="grid" id="mapaGrid">
+<div class="card" data-cat="cidade praia"><h3>🌴☀️ Vice City</h3><p><b>Miami.</b> Neon, Ocean Beach, Little Cuba, Downtown, Club 919, 700+ interiores sem loading! Art Deco rosa e laranja!</p><button class="like-btn" onclick="curtir(this)">❤️ CURTIR (<span>0</span>)</button></div>
+<div class="card" data-cat="praia"><h3>🏝️ Leonida Keys</h3><p><b>Florida Keys.</b> Ilhas, pontes gigantes, casa do Jason, barcos, pesca, mergulho.</p><button class="like-btn" onclick="curtir(this)">❤️ CURTIR (<span>0</span>)</button></div>
+<div class="card" data-cat="natureza"><h3>🐊 Grassrivers</h3><p><b>Everglades.</b> Pântano, airboat, jacarés, cobras.</p><button class="like-btn" onclick="curtir(this)">❤️ CURTIR (<span>0</span>)</button></div>
+<div class="card" data-cat="cidade"><h3>🏚️ Port Gellhorn</h3><p><b>Panama City.</b> Praia falida, motéis, corrida de rua.</p><button class="like-btn" onclick="curtir(this)">❤️ CURTIR (<span>0</span>)</button></div>
+<div class="card" data-cat="cidade natureza"><h3>🏭 Ambrosia</h3><p><b>Clewiston.</b> Cidade do açúcar, refinaria, motoqueiros Final Chapter MC.</p><button class="like-btn" onclick="curtir(this)">❤️ CURTIR (<span>0</span>)</button></div>
+<div class="card" data-cat="natureza"><h3>⛰️ Mount Kalaga</h3><p><b>Norte da Flórida.</b> Parque Nacional, caça, pesca, Bigfoot.</p><button class="like-btn" onclick="curtir(this)">❤️ CURTIR (<span>0</span>)</button></div>
+</div></section>
+
+<!-- TRAILERS CORRIGIDO: SEM IFRAME QUE TRAVA -->
+<section id="trailers"><div class="palm">🌴🌅🌴</div><h2>TODOS OS <span>TRAILERS</span> OFICIAIS</h2><p class="sub">✅ CORRIGIDO! Agora é capa clicável, abre direto no YouTube, nunca mais dá erro de idade!</p>
 <div class="grid">
-<div class="card card-rosa"><span class="tag">TRAILER 1 • 04 DEZ 2023</span><h3>🌅 Trailer 1 - A Revelação</h3><p>Lucia na prisão, Vice City, Leonida. Tom Petty - Love Is A Long Road. 90M views em 24h!</p><iframe class="video" src="https://www.youtube.com/embed/QdBZY2fkU-0" allowfullscreen></iframe></div>
-<div class="card card-azul"><span class="tag">TRAILER 2 • 06 MAI 2025</span><h3>🧡 Trailer 2 - Jason & Lucia</h3><p>Apresenta Jason completo, casal, assaltos. Pointer Sisters - Hot Together. 475M views!</p><iframe class="video" src="https://www.youtube.com/embed/VQRLujxTm3c" allowfullscreen></iframe></div>
-<div class="card"><span class="tag">27 AGO 2026 • 26 MIN</span><h3>🌴 An Extended Look</h3><p>27 minutos de gameplay real no PS5! Missões, Heat, troca de personagem. Estreou na Netflix!</p><iframe class="video" src="https://www.youtube.com/embed/tJbzMqJGH4k" allowfullscreen></iframe></div>
-<div class="card card-rosa"><span class="tag">15 OUT 2026</span><h3>🔥 Launch Trailer</h3><p>Trailer final! Justice ft. Tame Impala, SZA - Flower in a Hurricane. Puro cinema!</p><iframe class="video" src="https://www.youtube.com/embed/rz1B4B2yBZY" allowfullscreen></iframe></div>
-<div class="card card-azul"><span class="tag">10 NOV 2026</span><h3>📦 Pre-Load Now</h3><p>30 seg avisando que o pré-download abriu. Tove Lo - Blood In Your Eyes.</p><iframe class="video" src="https://www.youtube.com/embed/_yl5ELcmugI" allowfullscreen></iframe></div>
-<div class="card"><span class="tag tag2">19 NOV 2026 • OUT NOW</span><h3>🎉 Out Now - Já Lançou!</h3><p>O vídeo do dia do lançamento! GTA 6 no mundo todo!</p><a href="https://www.youtube.com/@RockstarGames" target="_blank"><button>VER NO CANAL DA ROCKSTAR</button></a><p>⚠️ Não existe Trailer 3 oficial! O que chamam de Trailer 3 é o Extended Look.</p></div>
+<div class="card"><span class="tag">TRAILER 1 • 04 DEZ 2023</span><h3>🌅 Trailer 1 - A Revelação</h3><p>Lucia na prisão, Vice City. Tom Petty - Love Is A Long Road. 90M views em 24h!</p><a href="https://www.youtube.com/watch?v=QdBZY2fkU-0" target="_blank"><div class="thumb"><img src="https://i.ytimg.com/vi/QdBZY2fkU-0/maxresdefault.jpg"><div class="play">▶</div></div></a><a href="https://www.youtube.com/watch?v=QdBZY2fkU-0" target="_blank"><button class="btn">▶ ASSISTIR NO YOUTUBE</button></a></div>
+<div class="card"><span class="tag">TRAILER 2 • 06 MAI 2025</span><h3>🧡 Trailer 2 - Jason & Lucia</h3><p>Apresenta Jason completo, casal, assaltos. Pointer Sisters - Hot Together. 475M views!</p><a href="https://www.youtube.com/watch?v=VQRLujxTm3c" target="_blank"><div class="thumb"><img src="https://i.ytimg.com/vi/VQRLujxTm3c/maxresdefault.jpg"><div class="play">▶</div></div></a><a href="https://www.youtube.com/watch?v=VQRLujxTm3c" target="_blank"><button class="btn">▶ ASSISTIR NO YOUTUBE</button></a></div>
+<div class="card"><span class="tag">27 AGO 2026 • 26 MIN</span><h3>🌴 An Extended Look</h3><p>27 minutos de gameplay real no PS5! Missões, Heat, troca de personagem. Estreou na Netflix!</p><a href="https://www.youtube.com/watch?v=tJbzMqJGH4k" target="_blank"><div class="thumb"><img src="https://i.ytimg.com/vi/tJbzMqJGH4k/maxresdefault.jpg"><div class="play">▶</div></div></a><a href="https://www.youtube.com/watch?v=tJbzMqJGH4k" target="_blank"><button class="btn">▶ ASSISTIR NO YOUTUBE</button></a></div>
+<div class="card"><span class="tag">15 OUT 2026</span><h3>🔥 Launch Trailer</h3><p>Trailer final! Justice - Flower in a Hurricane. Puro cinema!</p><a href="https://www.youtube.com/watch?v=rz1B4B2yBZY" target="_blank"><div class="thumb"><img src="https://i.ytimg.com/vi/rz1B4B2yBZY/maxresdefault.jpg"><div class="play">▶</div></div></a><a href="https://www.youtube.com/watch?v=rz1B4B2yBZY" target="_blank"><button class="btn">▶ ASSISTIR NO YOUTUBE</button></a></div>
+<div class="card"><span class="tag">10 NOV 2026</span><h3>📦 Pre-Load Now</h3><p>30 seg avisando que o pré-download abriu. Tove Lo - Blood In Your Eyes.</p><a href="https://www.youtube.com/watch?v=_yl5ELcmugI" target="_blank"><div class="thumb"><img src="https://i.ytimg.com/vi/_yl5ELcmugI/maxresdefault.jpg"><div class="play">▶</div></div></a><a href="https://www.youtube.com/watch?v=_yl5ELcmugI" target="_blank"><button class="btn">▶ ASSISTIR NO YOUTUBE</button></a></div>
+<div class="card"><span class="tag tag2">19 NOV 2026 • OUT NOW</span><h3>🎉 Out Now - Já Lançou!</h3><p>O vídeo do dia do lançamento!</p><a href="https://www.youtube.com/@RockstarGames" target="_blank"><button class="btn btn-blue">VER CANAL DA ROCKSTAR</button></a><p>⚠️ Não existe Trailer 3 oficial!</p></div>
 </div></section>
 
-<section class="pink-sec" id="mapa"><h2>MAPA DE <span>LEONIDA</span> 🌴</h2><p class="sub">6 regiões, 5 condados, 2x maior que GTA 5. Flórida fictícia com pôr-do-sol laranja!</p>
-<div class="grid">
-<div class="card card-rosa"><h3>🌴☀️ Vice City</h3><p><b>Miami.</b> Neon, praia, Ocean Beach, Little Cuba, Stockyard, Downtown, Aeroporto, Porto, Club 919, 700+ interiores sem loading! Art Deco rosa e laranja!</p></div>
-<div class="card card-azul"><h3>🏝️ Leonida Keys</h3><p><b>Florida Keys.</b> Ilhas, pontes gigantes, casa do Jason, barcos, pesca, mergulho. Onde tudo começa!</p></div>
-<div class="card"><h3>🐊 Grassrivers</h3><p><b>Everglades.</b> Pântano, airboat, jacarés, cobras, vida selvagem.</p></div>
-<div class="card"><h3>🏚️ Port Gellhorn</h3><p><b>Panama City.</b> Praia falida, motéis baratos, corrida de rua, crime de rua.</p></div>
-<div class="card card-rosa"><h3>🏭 Ambrosia</h3><p><b>Clewiston.</b> Cidade do açúcar, refinaria Allied Crystal, motoqueiros Final Chapter MC.</p></div>
-<div class="card card-azul"><h3>⛰️ Mount Kalaga</h3><p><b>Norte da Flórida.</b> Parque Nacional, caça, pesca, trilhas, Bigfoot, mistérios.</p></div>
+<section id="personagens"><h2>PERSONAGENS 🧡</h2><p class="sub">Clica no personagem pra ver o segredo dele!</p><div class="grid">
+<div class="card" onclick="alert('🔥 JASON DUVAL: Ex-militar, mora nos Keys, quer recomeço mas o crime chama ele!')"><h3>🔥 Jason Duval - Clica!</h3><p>Ex-militar, 1,85m, mora nos Keys. <b>Clique pra ver segredo!</b></p></div>
+<div class="card" onclick="alert('💎 LUCIA CAMINOS: Saiu da prisão, aprendeu a lutar com o pai, quer vida boa pra mãe!')"><h3>💎 Lucia Caminos - Clica!</h3><p>Ex-presidiária, saiu da Penitenciária de Leonida. <b>Clique!</b></p></div>
+<div class="card" onclick="alert('🧢 CAL: Melhor amigo do Jason, ama teoria da conspiração!')"><h3>🧢 Cal Hampton</h3><p>Melhor amigo do Jason. <b>Clique!</b></p></div>
+<div class="card" onclick="alert('🚤 BRIAN: Contrabandista das antigas, mentor do Jason!')"><h3>🚤 Brian Heder</h3><p>Mentor do Jason. <b>Clique!</b></p></div>
+<div class="card" onclick="alert('👑 BOOBIE: Lenda de Vice City, dono de boate!')"><h3>👑 Boobie Ike</h3><p>Lenda de Vice City. <b>Clique!</b></p></div>
+<div class="card" onclick="alert('🎤 DREQUAN: Quer virar estrela do rap!')"><h3>🎤 DreQuan Priest</h3><p>Quer virar estrela. <b>Clique!</b></p></div>
 </div></section>
 
-<section class="pink-sec" id="personagens"><h2>PERSONAGENS 🧡</h2><div class="grid">
-<div class="card"><h3>🔥 Jason Duval</h3><p>Ex-militar, 1,85m, cresceu entre golpistas, mora nos Keys na casa do Brian. Quer recomeço.</p></div>
-<div class="card card-rosa"><h3>💎 Lucia Caminos</h3><p>Ex-presidiária, saiu da Penitenciária de Leonida. Aprendeu a lutar com o pai. Quer vida boa pra mãe.</p></div>
-<div class="card"><h3>🧢 Cal Hampton</h3><p>Melhor amigo do Jason, teoria da conspiração, pesca com Jason.</p></div>
-<div class="card"><h3>🚤 Brian Heder</h3><p>Contrabandista das antigas, mentor do Jason.</p></div>
-<div class="card"><h3>👑 Boobie Ike</h3><p>Lenda de Vice City, empresário, dono de boate.</p></div>
-<div class="card"><h3>🎤 Dre'Quan Priest</h3><p>Quer virar estrela do rap.</p></div>
-<div class="card"><h3>🎶 Real Dimez</h3><p>Bae-Luxe & Roxy, dupla de rap viral no TikTok de Leonida.</p></div>
-<div class="card"><h3>💰 Raul Bautista</h3><p>Assaltante profissional, especialista em banco.</p></div>
+<!-- QUIZ INTERATIVO -->
+<section><h2>QUIZ: <span>QUAL PERSONAGEM TU É?</span></h2><p class="sub">Responde as 3 perguntas clicando!</p>
+<div class="card"><p id="quizQ" style="font-weight:900;font-size:16px">1/3 - Tu prefere:</p><div id="quizOpts"></div><p id="quizRes" style="font-weight:900;color:#ff2d78;margin-top:10px"></p><button class="btn" onclick="reiniciarQuiz()" style="display:none" id="quizAgain">🔄 JOGAR DE NOVO</button></div></section>
+
+<section id="preco"><h2>PREÇO & EDIÇÕES 🧡</h2><div class="grid">
+<div class="card"><h3>Standard Edition</h3><h2>R$ 449,90</h2><p>✅ Jogo completo<br>✅ 91 missões<br>✅ Pacote Vintage Vice City</p><a href="https://www.playstation.com/pt-br/games/grand-theft-auto-vi/" target="_blank"><button class="btn">COMPRAR NO PS5</button></a></div>
+<div class="card price-card"><h3>🔥 Ultimate Edition</h3><h2>R$ 549,90</h2><p>✅ Tudo da Standard<br>✅ 3 carros, 5 negócios, roupas, armas<br>✅ Missão Classic Car</p><a href="https://www.xbox.com/pt-BR/games/store/grand-theft-auto-vi/9p3j32v9q9hl" target="_blank"><button class="btn" style="background:#fff;color:#ff2d78">COMPRAR NO XBOX</button></a></div>
+<div class="card"><h3>📦 O que precisa?</h3><p><b>Console:</b> PS5, PS5 Pro, Xbox Series X|S<br><b>Espaço:</b> 212 GB<br><b>Idade:</b> 18 anos<br><b>PC:</b> SEM DATA! Cuidado com golpe!<br><b>FPS:</b> 30 FPS</p></div>
 </div></section>
 
-<section id="preco"><div class="orange-sec" style="padding:30px 16px"><h2 style="text-align:center">PREÇO & EDIÇÕES 🧡</h2><div class="grid" style="margin-top:20px">
-<div class="card"><h3>Standard Edition</h3><h2>R$ 449,90</h2><p>✅ Jogo completo<br>✅ 91 missões<br>✅ Mapa completo<br>✅ Pacote Vintage Vice City</p><a href="https://www.playstation.com/pt-br/games/grand-theft-auto-vi/" target="_blank"><button>COMPRAR NO PS5</button></a></div>
-<div class="card price-card"><h3>🔥 Ultimate Edition</h3><h2>R$ 549,90</h2><p>✅ Tudo da Standard<br>✅ Grotti Cheetah, Dinka Enduro, Shitzu Squalo<br>✅ Rideout Customs, One-Eyed Willie's, Sara's Salon, Stock 305, Electric Fang Tattoo<br>✅ Roupas, armas, missão Classic Car</p><a href="https://www.xbox.com/pt-BR/games/store/grand-theft-auto-vi/9p3j32v9q9hl" target="_blank"><button style="background:#fff;color:#ff2d78">COMPRAR NO XBOX</button></a></div>
-<div class="card card-azul"><h3>📦 O que precisa?</h3><p><b>Console:</b> PS5, PS5 Pro, Xbox Series X|S<br><b>Espaço:</b> 212 GB<br><b>Idade:</b> 18 anos<br><b>PC:</b> SEM DATA! Cuidado com golpe!<br><b>FPS:</b> 30 FPS, PS5 Pro tem PSSR + Ray Tracing</p></div>
-</div></div></section>
-
-<section class="pink-sec"><h2>100+ FATOS 🌴🧡</h2><p class="sub">Pesquisa completa da Rockstar + imprensa!</p><div class="grid">
+<section><h2>100+ FATOS 🌴🧡</h2><div class="grid">
 <div class="fact">1. Lançou 19/11/2026, 13 anos depois do GTA 5</div>
-<div class="fact">2. 2 adiamentos: 2025 → 26 Mai 2026 → 19 Nov 2026</div>
-<div class="fact">3. Lucia é a 1ª protagonista mulher jogável</div>
-<div class="fact">4. Casal inspirado em Bonnie & Clyde</div>
-<div class="fact">5. Troca de personagem livre</div>
-<div class="fact">6. Polícia 6 estrelas, lembra tua roupa e carro</div>
-<div class="fact">7. Criminal Profile: julga se tu é profissional</div>
-<div class="fact">8. Relacionamento muda o final</div>
-<div class="fact">9. 600 mil animações</div>
-<div class="fact">10. 170+ espécies de animais</div>
-<div class="fact">11. Academia, comida e sono</div>
-<div class="fact">12. Ressaca visível por dias se beber muito</div>
-<div class="fact">13. Dinheiro tem que guardar no banco</div>
-<div class="fact">14. Roubar carro usa app WaINK</div>
-<div class="fact">15. Carros tem gasolina</div>
-<div class="fact">16. Armas ficam no porta-malas</div>
-<div class="fact">17. Rádio + podcasts</div>
-<div class="fact">18. Álbum com 34 músicas - Travis Scott</div>
-<div class="fact">19. Sem Online no lançamento</div>
-<div class="fact">20. Sem PC - cuidado com golpe APK!</div>
-<div class="fact">21. Caixa física NÃO tem disco, só código</div>
-<div class="fact">22. Faturou US$ 3,79 BILHÕES no dia 1</div>
-<div class="fact">23. IGN deu 10/10</div>
-<div class="fact">24. 281 screenshots oficiais</div>
-<div class="fact">25. Easter egg Velozes e Furiosos - Eclipse Paul Walker</div>
-<div class="fact">26. Mistério Bigfoot em Pelican Valley</div>
-<div class="fact">27. 10 pontos de meditação</div>
-<div class="fact">28. 11 corridas em Gellhorn</div>
-<div class="fact">29. História ~80 horas</div>
-<div class="fact">30. Dá pra roubar avião no aeroporto</div>
-<div class="fact">31. Jet ski, barco, hidroavião, airboat</div>
-<div class="fact">32. Tem clube 919, boate interativa</div>
-<div class="fact">33. Vice City = Miami, Leonida = Flórida</div>
-<div class="fact">34. Ocean Beach = Art Deco rosa e laranja!</div>
-<div class="fact">35. Tem flamingos, palmeiras e neon em tudo</div>
-<div class="fact">36. BÔNUS: Segue @mo661190 no Insta!</div>
+<div class="fact">2. Lucia é a 1ª protagonista mulher jogável</div>
+<div class="fact">3. Polícia 6 estrelas, lembra tua roupa e carro</div>
+<div class="fact">4. 600 mil animações, 170+ animais</div>
+<div class="fact">5. Academia, comida, sono e ressaca</div>
+<div class="fact">6. Faturou US$ 3,79 BILHÕES no dia 1</div>
+<div class="fact">7. IGN deu 10/10</div>
+<div class="fact">8. Vice City = Miami, Leonida = Flórida</div>
+<div class="fact">9. Sem PC - cuidado com golpe APK!</div>
+<div class="fact">10. Tem Bigfoot, flamingos e neon em tudo</div>
+<div class="fact">11. 91 missões, ~80 horas de história</div>
+<div class="fact">12. BÔNUS: Segue @mo661190 no Insta!</div>
 </div></section>
 
-<section><h2>QUAL PERSONAGEM TU É? 🌴</h2><div class="card"><label>Tu prefere:</label><select id="q"><option>Assalto planejado e quieto</option><option>Sair atirando e fugindo</option><option>Ficar de boa nos Keys pescando</option><option>Dominar Vice City</option></select><button onclick="document.getElementById('r').innerText='Tu é JASON + LUCIA juntos! O casal perfeito do crime em Leonida! 🧡🌴 Marca teu duo!'">VER RESULTADO</button><p id="r" style="font-weight:900;margin-top:10px"></p></div></section>
+<section><h2>ME SEGUE NO INSTA 📸</h2><div class="grid"><div class="card"><h3>📸 Instagram</h3><p>@mo661190 - Conteúdo diário de GTA 6!</p><a href="https://instagram.com/mo661190" target="_blank"><button class="btn">SEGUIR NO INSTA</button></a></div><div class="card"><h3>🎮 Jogar junto?</h3><p>Comenta #LEONIDA + teu console!</p></div><div class="card"><h3>🔔 Salva o site!</h3><p>Salva nos favoritos e volta quando sair GTA Online!</p></div></div></section>
 
-<section><h2>ME SEGUE NO INSTA 📸</h2><div class="grid"><div class="card card-rosa"><h3>📸 Instagram</h3><p>@mo661190 - Conteúdo diário de GTA 6!</p><a href="https://instagram.com/mo661190" target="_blank"><button>SEGUIR NO INSTA</button></a></div><div class="card card-azul"><h3>🎮 Jogar junto?</h3><p>Comenta #LEONIDA + teu console (PS5 ou Xbox)!</p></div><div class="card"><h3>🔔 Salva o site!</h3><p>Salva nos favoritos e volta quando sair GTA 6 Online e PC!</p></div></div></section>
+<footer><div class="palm">🌴🧡🌴💗🌴🌊🌴</div><h2 style="color:#fff">GTA VI - LEONIDA SUNSET</h2><p>Site de fã, não oficial da Rockstar / Take-Two.<br>Feito com 🧡 em São Paulo - 2026</p><p>#GTA6 #LEONIDA #VICECITY</p><p style="margin-top:20px;font-size:12px">Versão 4.0 - Bugs corrigidos ✅</p></footer>
 
-<footer><div class="palm">🌴🧡🌴💗🌴🌊🌴</div><h2 style="color:#fff">GTA VI - LEONIDA SUNSET</h2><p>Site de fã, não oficial da Rockstar Games / Take-Two.<br>Feito com 🧡 em São Paulo - 2026</p><p>#GTA6 #LEONIDA #VICECITY #JASONELUCIA #SUNSET</p></footer>
+<nav class="bottom-nav"><a href="#trailers">▶<br>TRAILERS</a><a href="#mapa">🌴<br>MAPA</a><a href="#personagens">👥<br>PERSONAGENS</a><a href="#preco">🧡<br>PREÇO</a><a href="https://instagram.com/mo661190" target="_blank">📸<br>INSTA</a></nav>
+
+<script>
+let nivel=1,pontos=0;
+function fugir(){if(nivel<6){nivel++;pontos+=100} else {pontos+=500;alert('🔥🔥 TU CHEGOU EM 6 ESTRELAS! A POLÍCIA INTEIRA TÁ ATRÁS DE TU! FUJA!')}document.getElementById('stars').innerText='⭐'.repeat(nivel);document.getElementById('wantedScore').innerText='Pontos de crime: '+pontos;let t=['','Nível 1 - A polícia tá te olhando...','Nível 2 - Viatura atrás de tu!','Nível 3 - Helicóptero no céu!','Nível 4 - SWAT chegou!','Nível 5 - Todo mundo atrás de tu!','Nível 6 - EXÉRCITO! CORRE!'];document.getElementById('wantedText').innerText=t[nivel];}
+function limpar(){nivel=1;pontos=0;document.getElementById('stars').innerText='⭐';document.getElementById('wantedText').innerText='Tu se escondeu! Polícia perdeu tu! 😎';document.getElementById('wantedScore').innerText='Pontos de crime: 0';}
+function curtir(btn){let s=btn.querySelector('span');s.innerText=parseInt(s.innerText)+1;btn.innerText='❤️ CURTIU! ('+s.innerText+')';btn.style.background='#ff2d78';btn.style.color='#fff';}
+function filtrar(cat,btn){document.querySelectorAll('.filter-bar button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');document.querySelectorAll('#mapaGrid .card').forEach(c=>{c.style.display=(cat==='todos'||c.dataset.cat.includes(cat))?'block':'none';});}
+let quiz=[{q:'1/3 - Num assalto tu é:',opts:['Planejado e quieto','Sai atirando','Motorista da fuga']},{q:'2/3 - Teu lugar favorito:',opts:['Praia de Vice City','Pântano','Cidade grande']},{q:'3/3 - Teu parceiro ideal:',opts:['Jason','Lucia','Cal']}],qi=0;
+function mostraQuiz(){if(qi>=quiz.length){document.getElementById('quizQ').innerText='RESULTADO:';document.getElementById('quizOpts').innerHTML='';document.getElementById('quizRes').innerText='🔥 TU É JASON + LUCIA JUNTOS! O casal perfeito do crime em Leonida! Marca teu duo nos comentários! 🌴🧡';document.getElementById('quizAgain').style.display='block';return}document.getElementById('quizQ').innerText=quiz[qi].q;document.getElementById('quizOpts').innerHTML=quiz[qi].opts.map(o=>`<button class="quiz-opt" onclick="qi++;mostraQuiz()">${o}</button>`).join('');}
+function reiniciarQuiz(){qi=0;document.getElementById('quizRes').innerText='';document.getElementById('quizAgain').style.display='none';mostraQuiz();}
+mostraQuiz();
+</script>
 </body>
 </html>
